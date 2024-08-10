@@ -2,5 +2,10 @@
   "Navigation": {
     "home": "home",
     "contact": "contact"
+  },
+  "HeroTitle": {
+    "title": "Unleash Your Creativity",
+    "subTitle": "Transforming visions into digital reality.",
+    "button": "Start Your Journey"
   }
 }

@@ -1,5 +1,5 @@
 import { NextIntlClientProvider } from "next-intl";
-import { Red_Hat_Display } from "next/font/google";
+import { Rowdies } from "next/font/google";
 import { locales } from "@/config";
 import { ReactNode } from "react";
 import {
@@ -11,8 +11,8 @@ import Navigation from "@/components/Navigation/Navigation";
 import { cn } from "@/utils/utils";
 import { Providers } from "../providers";
 
-const redHatDisplay = Red_Hat_Display({
-  weight: ["300", "500", "600", "700"],
+const redHatDisplay = Rowdies({
+  weight: ["300", "400", "700"],
   subsets: ["latin"],
 });
 

@@ -2,8 +2,12 @@
 
 import { Parallax } from "react-scroll-parallax";
 import Image from "next/image";
+import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function HeroParallax() {
+  const t = useTranslations("HeroTitle");
+
   return (
     <div>
       <Parallax
@@ -52,21 +56,44 @@ export default function HeroParallax() {
       </Parallax>
 
       <Parallax
-        opacity={[1, 0]}
+        opacity={[2, 0]}
+        startScroll={0}
+        endScroll={400}
         style={{
           position: "fixed",
-          left: 0,
+          // left: "32%",
+          zIndex: 160,
           top: "26vw",
           width: "100%",
+          transform: "tanslateX(50%)",
         }}
       >
-        {/* <Image
-          style={{
-            width: "30vw",
-          }}
-          src="/goonies.png"
-          alt="Goonies"
-        /> */}
+        <div className="flex flex-col items-center">
+          <h1 className="text-white text-[40px]">{t("title")}</h1>
+        </div>
+      </Parallax>
+      <Parallax
+        opacity={[0, 1]}
+        translateY={[50, -50]}
+        startScroll={400}
+        endScroll={800}
+        style={{
+          position: "fixed",
+
+          zIndex: 300,
+          top: "26vw",
+          width: "100%",
+          transform: "tanslateX(50%)",
+        }}
+      >
+        <div className="flex flex-col items-center gap-3">
+          <p className="text-white text-[32px]">{t("subTitle")}</p>
+          <Link href="/CTA" className="cursor-pointer">
+            <button className="text-white border-[2px] rounded-[16px] px-4 py-3">
+              {t("button")}
+            </button>
+          </Link>
+        </div>
       </Parallax>
       <div className="z-[126] fixed left-[50%] bottom-16">
         <Parallax
