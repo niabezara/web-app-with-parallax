@@ -40,7 +40,7 @@ function Navigation() {
     },
   ];
   return (
-    <div className="w-full absolute bg-red-400  px-2 md:px-5 sm:px-6 pt-7 sm:pt-[44px] sm:pl-[45px] lg:pt-[48px] lg:pl-[140px] lg:pr-[151px] flex items-center flex-col">
+    <div className="w-full z-[9999] absolute bg-transparent  px-2 md:px-5 sm:px-6 pt-7 sm:py-[30px]  flex items-center flex-col">
       <div className="w-full z-[10] lg:max-w-[1109px]">
         <div className="w-full">
           {/* Mobile Navbar background */}
@@ -98,7 +98,7 @@ function Navigation() {
               </div>
             </>
           )}
-          <div className="flex z-[12] w-full lg:justify-between justify-center items-center relative mb-[37px]">
+          <div className="flex z-[12] w-full justify-center items-center relative mb-[37px]">
             <NavigationLink
               key="home"
               type="desktop"
@@ -108,7 +108,7 @@ function Navigation() {
               {/* <Icons.Logo className="block w-[88px] mt-[2px] lgDesktop:w-[140px] lgDesktop:mt-0" /> */}
             </NavigationLink>
             <div className="flex items-center">
-              <div className="hidden lg:flex lgDesktop:min-w-[378px] lg:gap-[56px] lg:justify-between z-[10] lg:mr-[106px]">
+              <div className="hidden lg:flex lgDesktop:min-w-[378px] lg:gap-[150px] lg:justify-between z-[10] lg:mr-[106px]">
                 {NavigationLinks?.map((navigationLink: any) => {
                   return (
                     <NavigationLink

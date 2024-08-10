@@ -23,8 +23,8 @@ const LocaleText: React.FC<{
     <span
       className={cn(
         "mr-1 font-red-hat-display",
-        isMenuOpen ? "text-white/50" : "text-white/50",
-        siteLocale && siteLocale === locale ? "text-white" : "text-white/50"
+        isMenuOpen ? "text-white" : "text-white",
+        siteLocale && siteLocale === locale ? "text-white" : "text-white"
       )}
     >
       {locale === "ka" ? "GE" : "EN"}
@@ -72,8 +72,8 @@ const LocalSwitcher: React.FC<LocalSwitcherProps> = ({ isMenuOpen, type }) => {
               onClick={toggleDropdown}
               disabled={isPending}
               className={cn(
-                "flex items-center justify-center",
-                isPending && "transition-opacity [&:disabled]:opacity-30"
+                "flex items-center justify-center text-white",
+                isPending && ""
               )}
             >
               <LocaleText locale={locale} isMenuOpen={isMenuOpen} />

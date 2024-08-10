@@ -68,8 +68,18 @@ export default function HeroParallax() {
           alt="Goonies"
         /> */}
       </Parallax>
+      <div className="z-[126] fixed left-[50%] bottom-16">
+        <Parallax
+          className="scrollgif"
+          translateY={[0, -50]} // Correctly using translateY for vertical movement
+          opacity={[1, 0]} // Fading out as you scroll
+          shouldAlwaysCompleteAnimation={true}
+        >
+          <Image src="/scrollgif.gif" width={50} height={50} alt="gif" />
+        </Parallax>
+      </div>
 
-      {/* <div
+      <div
         style={{
           position: "fixed",
           left: 0,
@@ -86,7 +96,7 @@ export default function HeroParallax() {
             height: "100%",
           }}
         ></div>
-      </div> */}
+      </div>
     </div>
   );
 }

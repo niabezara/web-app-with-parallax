@@ -21,10 +21,10 @@ export default function NavigationLink<Pathname extends AppPathnames>({
       aria-current={isActive ? "page" : undefined}
       className={cn(
         type === "mobile" &&
-          "text-[48px] font-regular font-red-hat-display text-white/60 xl:font-bold leading-[100%] capitalize relative max-w-fit transtiion-all duration-300 ease-in-out",
+          "text-[48px] font-regular font-red-hat-display text-white xl:font-bold leading-[100%] capitalize relative max-w-fit transtiion-all duration-300 ease-in-out",
         type === "desktop" &&
-          "font-regular text-[14px] xl:text-[16px] text-white/60 capitalize duration-300 ease-in-out",
-        isActive && `text-red-500`
+          "font-regular text-[14px] xl:text-[16px] text-white capitalize duration-300 ease-in-out",
+        isActive && `text-white`
       )}
       href={href}
       onClick={onClick}
