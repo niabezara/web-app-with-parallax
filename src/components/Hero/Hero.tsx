@@ -2,7 +2,7 @@ import HeroParallax from "../Parallax/HeroParallax";
 
 function Hero() {
   return (
-    <div>
+    <div className="relative">
       <HeroParallax />
     </div>
   );

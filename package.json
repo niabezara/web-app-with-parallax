@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-spring/web": "^9.7.4",
     "@uidotdev/usehooks": "^2.4.1",
     "clsx": "^2.1.1",
     "hamburger-react": "^2.5.1",

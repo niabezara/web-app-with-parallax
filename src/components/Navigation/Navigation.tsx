@@ -16,7 +16,7 @@ function Navigation() {
   };
 
   const t = useTranslations("Navigation");
-
+  // links
   const NavigationLinks = [
     {
       id: 1,
