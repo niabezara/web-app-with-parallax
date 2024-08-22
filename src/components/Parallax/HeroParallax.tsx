@@ -92,7 +92,7 @@ const HeroParallax: React.FC<HeroParallaxProps> = ({ locale }) => {
       >
         <div className="flex flex-col items-center gap-3">
           <p className="text-white text-[32px]">{t("subTitle")}</p>
-          <Link href="" className="cursor-pointer">
+          <Link href={`${locale}/CTA`} className="cursor-pointer">
             <button className="text-white border-[2px] rounded-[16px] px-4 py-3">
               {t("button")}
             </button>

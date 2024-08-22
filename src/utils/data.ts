@@ -6,8 +6,8 @@ export const aboutData = [
 ];
 
 export const images = [
-  { title: "super quick", img: "/img1.jpg", emoji: "🔥" },
-  { title: "no hassle", img: "/img2.jpg", emoji: "💡" },
-  { title: "clean code", img: "/img3.jpg", emoji: "🧽" },
-  { title: "reusable", img: "/img4.jpg", emoji: "🔮" },
+  { title: "super quick", img: "/img1.png" },
+  { title: "no hassle", img: "/img2.png" },
+  { title: "clean code", img: "/img3.png" },
+  { title: "reusable", img: "/img4.png" },
 ];

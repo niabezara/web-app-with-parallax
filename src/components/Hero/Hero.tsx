@@ -6,7 +6,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ locale }) => {
   return (
-    <div className="relative h-screen">
+    <div className="h-screen relative">
       <HeroParallax locale={locale} />
     </div>
   );

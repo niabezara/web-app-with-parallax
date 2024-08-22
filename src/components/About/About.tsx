@@ -33,7 +33,7 @@ export default function About() {
   return (
     <section
       ref={ref}
-      className="min-h-lvh z-[9999] pt-[5lvh] pb-[5lvh] text-white pr-[5lvw] pl-[5lvw] flex flex-wrap-reverse items-center gap-16 bg-black absolute"
+      className="min-h-lvh z-[9999] pt-[5lvh] pb-[5lvh] text-white pr-[5lvw] pl-[5lvw] flex flex-wrap-reverse items-center gap-16 bg-black "
     >
       <article className="grow basis-40 flex flex-col gap-8">
         <motion.p className="h3 uppercase" style={{ y: y1 }}>
