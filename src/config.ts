@@ -5,7 +5,7 @@ export const locales = ["ka", "en"] as const;
 
 export const pathnames = {
   "/": "/",
-  //   "/contact": "/contact",
+  "/CTA": "/CTA",
   //   "/ads-guide": "/ads-guide",
   //   "/blog": "/blog",
   //   "/projects": "/projects",
@@ -17,6 +17,4 @@ export const localePrefix = undefined;
 export type AppPathnames = keyof typeof pathnames;
 
 export const port = process.env.PORT || 3000;
-export const host = process.env.PRODUCTION
-  ? `https://${process.env.PRODUCTION_URL}`
-  : `http://localhost:${port}`;
+export const host = `http://localhost:${port}`;

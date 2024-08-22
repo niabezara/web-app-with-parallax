@@ -1,7 +1,9 @@
 {
   "Navigation": {
     "home": "home",
-    "contact": "contact"
+    "contact": "contact",
+    "about": "about",
+    "FAQ": "FAQ"
   },
   "HeroTitle": {
     "title": "Unleash Your Creativity",

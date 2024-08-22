@@ -25,17 +25,17 @@ function Navigation() {
     },
     {
       id: 2,
-      label: t("contact"),
-      href: "/contact",
+      label: t("about"),
+      href: "#about",
     },
     {
       id: 3,
-      label: "FAQ",
+      label: t("FAQ"),
       href: "/FAQ",
     },
     {
       id: 4,
-      label: "contact",
+      label: t("contact"),
       href: "/contact",
     },
   ];
@@ -98,7 +98,7 @@ function Navigation() {
               </div>
             </>
           )}
-          <div className="flex z-[12] w-full justify-center items-center relative mb-[37px]">
+          <div className="flex z-[12] w-full justify-end items-center relative mb-[37px]">
             <NavigationLink
               key="home"
               type="desktop"
@@ -107,8 +107,8 @@ function Navigation() {
             >
               {/* <Icons.Logo className="block w-[88px] mt-[2px] lgDesktop:w-[140px] lgDesktop:mt-0" /> */}
             </NavigationLink>
-            <div className="flex items-center">
-              <div className="hidden lg:flex lgDesktop:min-w-[378px] lg:gap-[150px] lg:justify-between z-[10] lg:mr-[106px]">
+            <div className="flex items-end fixed ">
+              {/* <div className="hidden  lg:flex lgDesktop:min-w-[378px] lg:gap-[150px] lg:justify-between z-[10] lg:mr-[106px]">
                 {NavigationLinks?.map((navigationLink: any) => {
                   return (
                     <NavigationLink
@@ -125,19 +125,10 @@ function Navigation() {
                     </NavigationLink>
                   );
                 })}
-              </div>
+              </div> */}
               <Suspense>
                 <LocalSwitcher type="desktop" isMenuOpen={isOpen} />
               </Suspense>
-
-              {/* <NavigationLink
-                key="contact us"
-                type="desktop"
-                href={navigationLinks.contactLink}
-                className="hidden lgDesktop:flex p-4 w mr-[14px] rounded-[128px] duration-500 transition-all text-white justify-center z-[10] w-[180px] bg-white/[1%] border-[1px] border-gradient-to-b from-[#fff]/[30%] to-[#999]/[0%] hover:bg-white hover:text-black"
-              >
-                {navigationLinks.contactName}
-              </NavigationLink> */}
             </div>
             <div
               className="absolute lg:hidden left-0 top-0 w-[40px] h-[40px] rounded-full bg-white/10 flex justify-center items-center"

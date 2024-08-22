@@ -5,7 +5,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
-export default function HeroParallax() {
+interface HeroParallaxProps {
+  locale: string;
+}
+
+const HeroParallax: React.FC<HeroParallaxProps> = ({ locale }) => {
   const t = useTranslations("HeroTitle");
 
   return (
@@ -88,7 +92,7 @@ export default function HeroParallax() {
       >
         <div className="flex flex-col items-center gap-3">
           <p className="text-white text-[32px]">{t("subTitle")}</p>
-          <Link href="/CTA" className="cursor-pointer">
+          <Link href="" className="cursor-pointer">
             <button className="text-white border-[2px] rounded-[16px] px-4 py-3">
               {t("button")}
             </button>
@@ -126,4 +130,6 @@ export default function HeroParallax() {
       </div>
     </div>
   );
-}
+};
+
+export default HeroParallax;

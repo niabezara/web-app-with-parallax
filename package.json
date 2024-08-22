@@ -11,12 +11,15 @@
   "dependencies": {
     "@react-spring/web": "^9.7.4",
     "@uidotdev/usehooks": "^2.4.1",
+    "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
+    "framer-motion": "^11.3.29",
     "hamburger-react": "^2.5.1",
     "next": "14.2.5",
     "next-intl": "^3.17.2",
     "react": "^18",
     "react-dom": "^18",
+    "react-scroll": "^1.9.0",
     "react-scroll-parallax": "^3.4.5",
     "tailwind-merge": "^2.4.0",
     "use-click-away": "^0.0.1"
@@ -25,6 +28,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-scroll": "^1.8.10",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "postcss": "^8",

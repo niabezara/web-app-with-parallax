@@ -1,7 +1,7 @@
-export default function Loading() {
-  return (
-    <div className="absolute top-0 z-[99999] left-0 bottom-0 right-0 w-full h-full flex justify-center items-center bg-red-800">
-      <h1>Loading.....</h1>
-    </div>
-  );
+import { Shell } from "@/components/shared/shell";
+
+export default function MainPageLoading() {
+  <Shell className="pt-8 pb-40" variant="maxWrapper" as="main">
+    <h1 className="text-[48px] text-red-200">Loading.....</h1>
+  </Shell>;
 }
