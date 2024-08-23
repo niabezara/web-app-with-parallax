@@ -9,5 +9,18 @@
     "title": "Unleash Your Creativity",
     "subTitle": "Transforming visions into digital reality.",
     "button": "Start Your Journey"
+  },
+  "about": {
+    "title": "let me explain",
+    "main": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore deserunt dicta deleniti laborum accusamus. Qui rerum suscipit quos nemo sit, delectus perspiciatis nostrum incidunt ipsum expedita numquam dolores quas excepturi.",
+    "step1": "super quick",
+    "step2": "no hassle",
+    "step3": "clean code",
+    "step4": "reusable"
+  },
+  "footer": {
+    "title": "LOREM IPSUM 🔮 LOREM",
+    "main": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore deserunt dicta deleniti laborum accusamus. Qui rerum suscipit quos nemo sit, delectus perspiciatis nostrum incidunt ipsum expedita numquam dolores quas excepturi.",
+    "check": "Check out"
   }
 }

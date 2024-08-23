@@ -1,10 +1,12 @@
 "use client";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useRef } from "react";
 
 export default function Footer() {
-  const phrase = "lorem ipsum 🔮 lorem";
+  const t = useTranslations("footer");
+  const phrase = t("title");
   const words = phrase.split(" ");
 
   const ref = useRef(null);
@@ -51,7 +53,7 @@ export default function Footer() {
               }
               className="h3 uppercase hover:text-slate-400 transition duration-300"
             >
-              Check out
+              {t("check")}
             </a>
             <Image
               alt="arrow"
@@ -61,12 +63,7 @@ export default function Footer() {
               loading="lazy"
             />
           </div>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-            vero. Quisquam, blanditiis! Officiis facere dolor commodi? Nesciunt
-            qui in magnam sed tempore quasi commodi sapiente minus? Reiciendis
-            magni pariatur doloremque.
-          </p>
+          <p>{t("main")}</p>
         </div>
       </div>
     </footer>

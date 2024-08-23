@@ -39,7 +39,7 @@ export default function Gallery() {
           >
             <motion.div
               style={{ y: y }}
-              className="relative h-[80rem] w-[27rem] mt-[-50rem]"
+              className="relative h-[80rem] w-[20rem] mt-[-50rem]"
             >
               <Image
                 alt={img.title}

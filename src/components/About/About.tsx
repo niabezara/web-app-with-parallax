@@ -9,9 +9,14 @@ import {
 
 import { useRef } from "react";
 import Image from "next/image";
-import { aboutData } from "@/utils/data";
+import {  getAboutData } from "@/utils/data";
+import { useTranslations } from "next-intl";
 
 export default function About() {
+  const t = useTranslations("about");
+
+  const aboutData = getAboutData(t);
+
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -37,14 +42,9 @@ export default function About() {
     >
       <article className="grow basis-40 flex flex-col gap-8">
         <motion.p className="h3 uppercase" style={{ y: y1 }}>
-          let me explain
+          {t("title")}
         </motion.p>
-        <motion.p style={{ y: y2 }}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
-          deserunt dicta deleniti laborum accusamus. Qui rerum suscipit quos
-          nemo sit, delectus perspiciatis nostrum incidunt ipsum expedita
-          numquam dolores quas excepturi.
-        </motion.p>
+        <motion.p style={{ y: y2 }}>{t("main")}</motion.p>
       </article>
       <article className="grow basis-96 overflow-hidden flex flex-col gap-4">
         {aboutData.map((data, i) => {

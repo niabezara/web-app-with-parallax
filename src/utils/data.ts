@@ -1,8 +1,8 @@
-export const aboutData = [
-  { title: "super quick" },
-  { title: "no hassle" },
-  { title: "clean code" },
-  { title: "reusable" },
+export const getAboutData = (t: (key: string) => string) => [
+  { title: t("step1") },
+  { title: t("step2") },
+  { title: t("step3") },
+  { title: t("step4") },
 ];
 
 export const images = [
