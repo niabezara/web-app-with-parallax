@@ -1,13 +1,9 @@
 import HeroParallax from "../Parallax/HeroParallax";
 
-interface HeroProps {
-  locale: string;
-}
-
-const Hero: React.FC<HeroProps> = ({ locale }) => {
+const Hero: React.FC = () => {
   return (
     <div className="h-screen relative">
-      <HeroParallax locale={locale} />
+      <HeroParallax />
     </div>
   );
 };

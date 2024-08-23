@@ -4,15 +4,11 @@ import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero/Hero";
 import SubFooter from "@/components/SubFooter";
 
-interface HomePageProps {
-  locale: string;
-}
-
-const HomePage: React.FC<HomePageProps> = ({ locale }) => {
+const HomePage: React.FC = () => {
   return (
     <main className="min-h-screen bg-black relative flex flex-col">
       <section className="h-[300vh]">
-        <Hero locale={locale} />
+        <Hero />
       </section>
       <section className=" bg-black z-[9999]">
         <About />
